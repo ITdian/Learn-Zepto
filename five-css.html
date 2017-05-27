@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css change</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<button class="btn">transformation</button>
+<div class="box"></div>
+<!--<script src="js/jquery-1.7.2.min.js"></script>-->
+<script src="js/zepto.min.js"></script>
+<script src="js/fx.js"></script>
+<script>
+    $(function () {
+        $('.btn').on('click',function () {
+            $('.box').animate({
+                backgroundColor:'blue',
+                borderRadius:'50%'
+            },1000)
+        })
+    })
+</script>
+</body>
+</html>

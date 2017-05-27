@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no">
+    <title></title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">top incident</button>
+<div id="box"></div>
+<!--<script src="js/jquery-1.7.2.min.js"></script>-->
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script>
+//    $(function () {
+//        $('#btn').on('click',function () {
+//            $('#box').css({
+//                backgroundColor:'red'
+//            });
+//
+//            //tap:只适用于移动端
+//            //click 适用于pc端  还可以用于移动端
+//            /*
+//            * 在移动端,运动top会比click快200~300ms
+//            * */
+//        })
+//    })
+    $(function () {
+        $('#btn').tap(function () {
+            $('#box').css({
+                backgroundColor:'red'
+            });
+        })
+    })
+</script>
+</body>
+</html>
